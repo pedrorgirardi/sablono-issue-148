@@ -1,0 +1,13 @@
+{:paths ["src"]
+
+ :deps
+ {org.clojure/clojurescript {:mvn/version "1.10.520"}
+
+  binaryage/devtools {:mvn/version "0.9.10"}
+
+  rum {:mvn/version "0.11.3"
+       :exclusions [sablono
+                    cljsjs/react
+                    cljsjs/react-dom]}
+
+  sablono {:mvn/version "0.8.7-SNAPSHOT"}}}

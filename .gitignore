@@ -1,0 +1,12 @@
+node_modules
+*.log
+*.iml
+.idea
+*.js.map
+public/js
+.cpcache/
+.shadow-cljs
+.nrepl-port
+.DS_Store
+jspm_packages/
+.serverless

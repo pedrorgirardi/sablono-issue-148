@@ -1,0 +1,17 @@
+{
+    "name": "sablono-issue-148",
+    "version": "0.1.0",
+    "main": " ",
+    "license": "MIT",
+    "scripts": {
+        "watch": "shadow-cljs watch app",
+        "release": "shadow-cljs release app"
+    },
+    "devDependencies": {
+        "shadow-cljs": "2.8.39"
+    },
+    "dependencies": {
+        "react": "16.2.0",
+        "react-dom": "16.2.0"
+    }
+}
