@@ -24,7 +24,7 @@
 
    [:span.f5.mt3 "Controlled with external state"]
    (ControlledInput2)
-   [:span.f7 (rum/react state-ref)]
+   [:span.f7.blue (rum/react state-ref)]
 
    [:span.f5.mt3 "Uncontrolled"]
    (UncontrolledInput)])
