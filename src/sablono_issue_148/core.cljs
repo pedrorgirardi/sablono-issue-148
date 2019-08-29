@@ -18,16 +18,24 @@
   [:input {:type "text"}])
 
 (rum/defc Root < rum/reactive []
-  [:div.w-30.flex.flex-column.pa3
-   [:span.f5 "Controlled"]
-   (ControlledInput)
+  [:*
+   [:a.link.underline.black {:href "https://github.com/r0man/sablono/issues/148"}
+    [:h1.ma0 "Sablono Issue 148"]]
 
-   [:span.f5.mt3 "Controlled with external state"]
-   (ControlledInput2)
-   [:span.f7.blue (rum/react state-ref)]
+   [:p.measure-wide "This project uses a fork of Sablono wich removes the logic around wrapping input elements."]
+   
+   [:p "Please see " [:a {:href "https://github.com/pedrorgirardi/sablono/tree/fix-148"} "this fork."]]
 
-   [:span.f5.mt3 "Uncontrolled"]
-   (UncontrolledInput)])
+   [:div.w-30.flex.flex-column
+    [:span.f5 "Controlled"]
+    (ControlledInput)
+
+    [:span.f5.mt3 "Controlled with external state"]
+    (ControlledInput2)
+    [:span.f7.blue (rum/react state-ref)]
+
+    [:span.f5.mt3 "Uncontrolled"]
+    (UncontrolledInput)]])
 
 (defn ^:dev/after-load render []
   (rum/mount (Root) (.getElementById js/document "app")))
