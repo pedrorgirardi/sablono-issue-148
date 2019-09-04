@@ -10,4 +10,5 @@
                     cljsjs/react
                     cljsjs/react-dom]}
 
-  sablono {:mvn/version "0.8.7-SNAPSHOT"}}}
+  sablono {:git/url "https://github.com/pedrorgirardi/sablono"
+           :sha "07ddbbc9b98baf8fffb5f760e11cf8f7cb8a1ba4"}}}
